@@ -1,0 +1,43 @@
+{
+  "name": "easylives",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^1.1.4",
+    "animate.css": "^4.1.1",
+    "axios": "^0.26.1",
+    "echarts": "^5.3.2",
+    "element-plus": "^2.1.10",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.14",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.1",
+    "eslint": "^8.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.4.0",
+    "prettier": "2.6.2",
+    "sass": "^1.50.1",
+    "sass-loader": "^12.6.0",
+    "vite": "^2.9.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js, vue, css}": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
